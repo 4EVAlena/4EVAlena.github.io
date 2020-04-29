@@ -18,6 +18,35 @@ body
     background-color: $primary
     color: #ffffff
     +bold
+
+.bg-secondary
+    background: $bg-secondary
+.input
+    height: 80px
+    padding-left: 30px
+    border: 1px solid #dddddd
+    &:hover
+        cursor: pointer
+.checkbox
+    display: none
+    &:checked + label:before
+        background: url('../img/offer/checked.jpg') no-repeat center
+        background-size: cover
+    &-label
+        display: flex
+        align-items: center
+        margin-right: 42px
+        &:hover
+            cursor: pointer
+        &:before
+            content: ''
+            display: inline-block
+            width: 30px
+            height: 30px
+            border: 1px solid #dddddd
+            margin-right: 20px     
+
+
 @media (max-width: 576px)
     .button-o
         font-size: 10px
